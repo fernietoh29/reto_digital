@@ -528,8 +528,6 @@ public class digital {
         emergente.sendKeys(Keys.ENTER);
 
 
-
-
                 /// tercer paso
 
         WebElement contextrat = driver.findElement(By.xpath("//*[@id=\"chatMain\"]/div/div[90]/app-componente-validacion-identidad/div/app-componente-verificar-camara/div/div/div[2]/div[2]/div/button"));
@@ -553,3 +551,4 @@ public class digital {
 
     }
 }
+
