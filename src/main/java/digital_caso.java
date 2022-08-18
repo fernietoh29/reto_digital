@@ -1,12 +1,11 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import java.util.concurrent.TimeUnit;
-
 import static org.openqa.selenium.Keys.ENTER;
 
 
-public class digital {
+
+public class digital_caso {
+
 
     private static WebDriver driver;
 
@@ -120,12 +119,12 @@ public class digital {
         driver.findElement(By.xpath("//*[@id=\"pr_id_2_list\"]/p-dropdownitem[1]/li")).click();
         Thread.sleep(1000);
 
-      WebElement ps7 = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
-       JavascriptExecutor cl7 = (JavascriptExecutor) driver;
-       cl7.executeScript("arguments[0].click()",ps7);
-       Thread.sleep(15000);
+        WebElement ps7 = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
+        JavascriptExecutor cl7 = (JavascriptExecutor) driver;
+        cl7.executeScript("arguments[0].click()",ps7);
+        Thread.sleep(15000);
 
-       ///
+        ///
 
         WebElement empresa = driver.findElement(By.xpath("//*[@id=\"UFAEMP\"]"));
         empresa.sendKeys("hexasolutions");
@@ -247,7 +246,7 @@ public class digital {
         Thread.sleep(2000);
 
 
-       // genero
+        // genero
         WebElement genero = driver.findElement(By.xpath("//*[@id=\"CPLGEN\"]/div"));
         JavascriptExecutor h = (JavascriptExecutor) driver;
         h.executeScript("arguments[0].click()",genero);
@@ -426,8 +425,8 @@ public class digital {
         /// segundo paso ///
 
         /////////////////////
-       // oferta
-       /////////////////////
+        // oferta
+        /////////////////////
 
 
         WebElement cuanto = driver.findElement(By.xpath("//*[@id=\"monto_solicitado\"]"));
@@ -500,7 +499,7 @@ public class digital {
         Thread.sleep(50000);
 
         //////////////////
-       // moneda
+        // moneda
         /////////////////
 
         WebElement extr = driver.findElement(By.xpath("//*[@id=\"indicadorOperacionMonedaExtranjera\"]"));
@@ -523,13 +522,13 @@ public class digital {
         Thread.sleep(50000);
 
 
-       // ventana modal
+        // ventana modal
         WebElement emergente3 = driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal/div/div[3]/button"));
         Thread.sleep(2000);
         emergente.sendKeys(Keys.ENTER);
 
 
-                /// tercer paso
+        /// tercer paso
 
         WebElement contextrat = driver.findElement(By.xpath("//*[@id=\"chatMain\"]/div/div[90]/app-componente-validacion-identidad/div/app-componente-verificar-camara/div/div/div[2]/div[2]/div/button"));
         contextrat.sendKeys(ENTER);
@@ -546,5 +545,10 @@ public class digital {
         Thread.sleep(50000);
 
     }
-}
 
+
+
+
+
+
+}
