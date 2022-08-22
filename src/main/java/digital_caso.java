@@ -12,7 +12,7 @@ public class digital_caso {
     public static void main(String[] args) throws InterruptedException {
 
 
-        System.setProperty("webdriver.edge.driver", "D:\\Driver\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\Acer\\Documents\\driverauro\\msedgedriver.exe");
         driver = new EdgeDriver();
         driver.get("https://creditodigital.hexasolutions.co/aliado/GAHm2HmWKxfYsY5PSjG5hw%3D%3D");
         driver.manage().window().maximize();
@@ -48,7 +48,7 @@ public class digital_caso {
 
         //Llamado de la cedula
         WebElement cedula = driver.findElement(By.id("numero_documento"));
-        cedula.sendKeys("1098774933");
+        cedula.sendKeys("1098801390");
         Thread.sleep(2000);//1098774933
 
         //Boton crear una nueva solicitud//
@@ -58,10 +58,10 @@ public class digital_caso {
         Thread.sleep(7000);
 
         WebElement nombre = driver.findElement(By.xpath("//*[@id=\"primerNombre\"]"));
-        nombre.sendKeys("diego");
+        nombre.sendKeys("erfonz");
         Thread.sleep(2000);
         WebElement snombre = driver.findElement(By.id("segundoNombre"));
-        snombre.sendKeys("Fernando");
+        snombre.sendKeys("");
         Thread.sleep(1000);
 
         WebElement ps3 = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
@@ -70,11 +70,11 @@ public class digital_caso {
         Thread.sleep(1000);
 
         WebElement papellido = driver.findElement(By.id("primerApellido"));
-        papellido.sendKeys("ramirez");
+        papellido.sendKeys("serrano");
         Thread.sleep(1000);
 
         WebElement sapellido = driver.findElement(By.id("segundoApellido"));
-        sapellido.sendKeys("ochoa");
+        sapellido.sendKeys("cordero");
         Thread.sleep(1000);
 
         WebElement ps4 = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
@@ -183,9 +183,9 @@ public class digital_caso {
         WebElement fecexp = driver.findElement(By.xpath("//*[@id=\"CPLEXP\"]"));
         JavascriptExecutor f = (JavascriptExecutor) driver;
         f.executeScript("arguments[0].click()",fecexp);
-        driver.findElement(By.xpath("//*[@id=\"2013\"]")).click();
-        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div/div/div[9]")).click();
-        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div[9]/table/tbody/tr[6]/td[2]")).click();
+        driver.findElement(By.xpath("//*[@id=\"2015\"]")).click();
+        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div/div/div[11]")).click();
+        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div[11]/table/tbody/tr[4]/td[5]")).click();
         Thread.sleep(1000);
 
         WebElement psl = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
@@ -220,9 +220,9 @@ public class digital_caso {
         WebElement fecnac = driver.findElement(By.xpath("//*[@id=\"CPLNAC\"]"));
         JavascriptExecutor n = (JavascriptExecutor) driver;
         n.executeScript("arguments[0].click()",fecnac);
-        driver.findElement(By.xpath("//*[@id=\"1995\"]")).click();
-        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div/div/div[9]")).click();
-        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div[9]/table/tbody/tr[4]/td[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"1997\"]")).click();
+        driver.findElement(By.xpath("/html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div/div/div[11]")).click();
+        driver.findElement(By.xpath("//html/body/p-dynamicdialog/div/div/div/app-componente-modal-fechas/div/div/div[2]/div[2]/div[11]/table/tbody/tr[4]/td[4]")).click();
         Thread.sleep(1000);
 
         WebElement psh = driver.findElement(By.xpath("/html/body/app-root/app-flujo-digital/app-chat/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div"));
